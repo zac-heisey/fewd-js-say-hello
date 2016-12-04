@@ -1,0 +1,30 @@
+{
+  "name": "say-hello",
+  "description": "Create a page that prompts for a name and prints a greeting using that name.",
+  "version": "0.1.0",
+  "author": "Tom Kraak",
+  "ava": {
+    "verbose": "true",
+    "files": "test/index.js"
+  },
+  "main": "app.js",
+  "repository": "github.com/betamore/say-hello.git",
+  "license": "MIT",
+  "bugs": "github.com/betamore/say-hello/issues",
+  "homepage": "github.com/betamore/say-hello#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "jsdom": "^9.8.3",
+    "nyc": "^10.0.0",
+    "snazzy": "^5.0.0",
+    "standard": "^8.6.0"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "test": "nyc ava",
+    "test:watch": "ava --watch",
+    "lint": "standard | snazzy"
+  }
+}
