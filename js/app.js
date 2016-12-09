@@ -8,10 +8,10 @@
       if (input.value.length === 0) {
         var warning = 'text-danger'
         var message = 'The text field is empty. Please enter your name.'
-        writeToDocument(message, warning)
+        writeToDocument(event, message, warning)
       } else {
         message = 'Hello ' + input.value + ', nice to meet you!'
-        writeToDocument(message)
+        writeToDocument(event, message)
       }
     }
   }
