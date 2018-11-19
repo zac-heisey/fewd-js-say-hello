@@ -1,5 +1,8 @@
 # Say Hello
 
+[![tests](http://img.shields.io/travis/betamore/say-hello/master.svg?style=flat)](https://travis-ci.org/betamore/say-hello)
+[![coverage](https://img.shields.io/coveralls/betamore/say-hello.svg?style=flat)](https://coveralls.io/github/betamore/say-hello?branch=master)
+
 This repositories contains the first solution for [Exercises for Programmers](https://pragprog.com/book/bhwb/exercises-for-programmers) by [Brian Hogan](//github.com/napcs).
 
 ## Problem Statement
