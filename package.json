@@ -13,6 +13,7 @@
   "homepage": "github.com/betamore/say-hello#readme",
   "devDependencies": {
     "ava": "^0.25.0",
+    "coveralls": "^3.0.2",
     "husky": "^1.1.4",
     "jsdom": "^13.0.0",
     "nyc": "^13.1.0",
@@ -31,6 +32,7 @@
   "scripts": {
     "test": "nyc ava",
     "test:watch": "ava --watch",
-    "lint": "prettier --single-quote --write '**/*js'"
+    "lint": "prettier --single-quote --write '**/*js'",
+    "coveralls": "nyc --reporter=lcov ava && cat ./coverage/lcov.info | coveralls"
   }
 }
