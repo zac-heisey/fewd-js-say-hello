@@ -4,7 +4,7 @@ import { spy, stub } from 'sinon';
 import { eventHandler } from '../js/eventHandler';
 
 test('eventHandler', async t => {
-  await JSDOM.fromFile('./index.html').then(({ window: { document }}) => {
+  await JSDOM.fromFile('./index.html').then(({ window: { document } }) => {
     global.document = document;
     let event = {
       preventDefault: spy(),

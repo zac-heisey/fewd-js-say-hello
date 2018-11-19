@@ -1,6 +1,5 @@
-(function (exports) {
-
-  function eventHandler (event) {
+(function(exports) {
+  function eventHandler(event) {
     const input = event.target.closest('#name');
     const column = document.querySelector('.col-md-6');
     const p = document.createElement('p');
@@ -17,5 +16,4 @@
   }
 
   exports.eventHandler = eventHandler;
-
-})(typeof exports === 'undefined' ? window.app = {} : exports)
+})(typeof exports === 'undefined' ? (window.app = {}) : exports);
