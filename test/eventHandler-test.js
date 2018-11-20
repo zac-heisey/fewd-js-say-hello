@@ -6,6 +6,8 @@ import { eventHandler } from '../js/eventHandler';
 test('eventHandler', async t => {
   await JSDOM.fromFile('./index.html').then(({ window: { document } }) => {
     global.document = document;
+
+    // hit enter with empty input
     let event = {
       preventDefault: spy(),
       target: {
@@ -21,6 +23,7 @@ test('eventHandler', async t => {
     t.true(p[0].classList.contains('text-danger'));
     t.true(event.preventDefault.calledOnce);
 
+    // hit enter with empty name in input
     event = {
       preventDefault: spy(),
       target: {
@@ -35,6 +38,7 @@ test('eventHandler', async t => {
     t.is(p[1].innerText, 'Hello Sam, nice to meet you!');
     t.true(event.preventDefault.calledOnce);
 
+    // don't hit enter
     event = {
       target: {
         closest: spy()
